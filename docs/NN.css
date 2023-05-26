@@ -1,0 +1,89 @@
+body {
+    background-color: #000;
+    color: #000000;
+    font-family: "Silkscreen", monospace;
+    font-size: 30px;
+    overflow-x: hidden;
+    }
+    
+    header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    z-index: 2;
+    }
+    
+    .header-container {
+    max-width: 800px;
+    margin: 0 auto;
+    }
+    
+    .title-box {
+    padding: 20px;
+    }
+    
+    .title {
+    color: #000000;
+    font-size: 48px;
+    margin: 0;
+    }
+    
+    main {
+    position: relative;
+    max-width: 800px;
+    margin: 150px auto 0;
+    padding: 20px;
+    z-index: 1;
+    }
+    
+    .content-box {
+    margin-top: 150px;
+    margin-left: 10px;
+    margin-right: 100px;
+    padding: 20px;
+    background-color:#000000; 
+    font-family:'Silkscreen', sans-serif; 
+    font-size:24px; 
+    line-height:1.5; 
+    text-align:justify; 
+    box-shadow:0 2px 4px rgba(0,0,0,0.1); 
+    opacity :0; /* added opacity */
+    animation-name :fadeIn; /* added animation name */
+    animation-duration :2s; /* added animation duration */
+    animation-timing-function :ease-in-out; /* added animation timing function */
+    animation-fill-mode :forwards; /* added animation fill mode */
+    }
+    
+    .background {
+    position:fixed; 
+    top:0; 
+    left:0; 
+    width:100%; 
+    height:100%; 
+    background-image:url("https://wallpapercave.com/wp/wp3210871.png"); 
+    background-repeat:no-repeat; 
+    background-size:cover; 
+    z-index:-1
+    }
+    
+    
+    @keyframes fadeIn { /* added keyframes */
+    from {opacity :0;}
+    to {opacity :1;}
+    }
+
+    nav li:hover > ul {
+        display:block; 
+        opacity:1; /* added opacity */
+        transform:translateY(0); /* added transform */
+        visibility:visible; /* added visibility */
+        }
+       
+       /* added hover effect to links */
+       a:hover {
+           color:rgb(251, 255, 10); 
+           transition:color 0.3s ease-in-out; 
+       }
+   
