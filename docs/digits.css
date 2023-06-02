@@ -6,6 +6,7 @@ canvas {
 }
 
 body {
+  background-image: url("https://wallpapercave.com/wp/wp3210871.png");;
   background-color: #2d2b2b;
   display: flex;
   justify-content: center;
@@ -32,3 +33,6 @@ body {
 #prediction-container div {
   margin: 0 20px;
 }
+
+
+ 
